@@ -21,7 +21,7 @@ body {
 	width: 75%;
 }
 .post {
-	border-bottom: 5px solid #000;
+	border-bottom: 1px solid #ccc;
 }
 .post h2 {
 	text-transform: uppercase;
@@ -46,6 +46,47 @@ body {
 .post ol {
 	font-size: .85em;
 	line-height: 1.2em;
+}
+.code {
+	background: #dedede;
+	padding:0 5px;
+	font-family: serif;
+	font-weight: 700;
+}
+.relative-example {
+	width: 400px;
+	height: 50px;
+	position: relative;
+	background: #333333;
+	text-align: center;
+	padding-top: 50px;
+	border: 1px solid #777777;
+	color: white;
+	left:10px;
+}
+.top {
+	width: 150px;
+	height: 40px;
+	background: green;
+	position: absolute;
+}
+.fixed {
+	position: fixed;
+	background: #333;
+	height: 40px;
+	width: 100px;
+	right:25px;
+	top:80px;
+	color:white;
+	padding: 10px;
+}
+#left {
+	top:0;
+	left:0;
+}
+#right {
+	right:0;
+	top:10px;
 }
 #footer {
 	background: #dedede;

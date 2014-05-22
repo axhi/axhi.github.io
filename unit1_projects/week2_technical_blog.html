@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<meta charset=”utf-8”>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/blog.css">
+	 <title>Technical Blog</title>
+	</head>
+<body>
+<div id="header">
+	<h1>Technical Blog</h1>
+</div>
+<div id="body">
+	<div class="post">
+	<h2>I absolutely tried fixing my relatives positions</h2>
+	<h5>Joey S. - 5/20/14</h5>
+	<h3>Positioning, what does it all mean?</h3>
+	<p>A key item to address immediately regarding positioning is there are 4 total positions, absolute, relative, fixed and oft forget static. I won't really get into static within this post other than to inform you that every element on a page begins as a 'static' element. Just remember that moving forward.</p>
+	<p><strong>Relative positioning</strong> is set by addding the style <span class="code">position: relative</span> to your element. This creates an element that is positioned relatively to itself. This just means that adding this style will only effect the element that it is assigned within. It is important to note that you need to move the position of this element by adding something like <span class="code">left: 10px;</span> to the element. This will move the element with relative positioning 10px left from where it would normally be. The image below explains how this would work.</p>
+	<div class="relative-example">Element with relative positioning & left 10px applied.</div>
+	<p>As you can see from the above, the element is 10px left from where the text starts. Another great thing about relative elements is they open the door for more powerful absolute chidlren within those relative elements. I have an example below of a few absolute boxes within the same elements from above.</p>
+	<div class="relative-example"><div class="top" id="left">top:0, left:0 applied</div><div class="top" id="right">top:10px, right:0 applied</div></div>
+	<p>As you can see, this has a lot of positive elements to help maintain a page and a relative element can really help you in this situation.</p>
+	<p><strong>Absolute positioning</strong> allows you to place the element anywhere you would like on the page. This is extremely powerful and dangerous. Items that have the style <span class="code">position: absolute</span> are allowed to be moved relatively to their parent element. The example above of the absolute elements within the relative element explain the parent objective. These elements have their positioning set to absolute so they should go right to the top of the entire page, but because they live within the element with a position of relative set, their position is reflective of the relative element first.</p>
+	<p>This concept seems confusing but you don't always have to view it as "an element with <span class="code">position: absolute</span>, needs to have relative element directly associated with it." As before where I said the relatively positioned to itself for relative elements, absolute elements are absolutely positioned to their parent element, not themselves. Because we applied <span class="code">left: 10px;</span> to our element above, the absolute elements also start at 10 pixels from the left element.</p>
+	<p><strong>Fixed positioning</strong> unlike the other positioning listed here, is always relative to your browser window. A good way to think of this is a bar at the top of your page that constantly sits there even though you keep going down further for more content. This bar has a style of <span class="code">position: fixed</span> set. An example of a fixed element is that grey box you have noticed as you have been scrolling throughout this blog post.</p>
+	<p>The element has these styles applied: <span class="code">position: fixed; right:25px; top:80px;</span>. The reason we need to tell it where on the page it should sit (using top/right) is that it will position itself to the very top-left of the site otherwise. So the <span class="code">right:25px</span> is telling the element to be 25px from the right of the browser. If you resize the browser, you will notice it still stays 25px away fomr the element it is positioned to. The style <span class="code">top:80px:</span> moves the element 80 pixels from the top of the browser, this is basically a static position from the top and that is why when you scroll, it doesn't seem to move. </p>
+	<p>I hope this blog post gave you a little more insight into the world of positioning elements, I know it helped me a bunch!</p>
+	<div class="fixed">What is this? Keep reading.</div>
+	</div>
+
+	<div class="post">
+	<h2>Sites I like</h2>
+	<h5>Joey S. - 5/12/14</h5>
+	<p>When asked to look at three websites I found awesome, I knew I had a problem when two of top 3 were Google and Google News. After a little more investigating, I came across these three sites:</p>
+	<ol><li><a href="http://thechive.com">theCHIVE</a></li><li><a href="http://espn.com">ESPN</a></li><li><a href="http://smashingmagazine.com">Smashing Magazine</a></li></ol>
+	<h3>The Chive</h3>
+	<p>First off, I go to this site everyday because I love the community and they happen to have awesome pictures and stories on there quite often. </p>
+	<p>When I look at the site, my eye gravitates towards teh white "content" area on the left side of the site. This is mostly due to the heavy dark/light contrast, but also because I know this is where the content lives usually.</p>
+	<p>The site is build like a blog so it makes navigating quite simple. You click on a post, see the images and at the end, it recommends more posts to view. It is simple and functional.</p>
+	<p>At times, it feels like there is a lot going on within the page, with the posts on the left and hotlinks/ads on the right, but sometimes that's what we are looking for.</p>
+	<h3>ESPN</h3>
+	<p>My visits to ESPN are frequent and long. I love sports and espn offers a great mix of live and current scores with life stories about sports/athletes.</p>
+	<p>ESPN.com's top scoreboard is just about my favorite aspect of the site. It offers what I truly go to the site for, in the most conveinent of places–the top. Also, most of the exciting content is "above the fold" as we say in print. I don't have to make any scrolls to get to my main content, which is a great aspect for print as well as rich media.</p>
+	<p>An annoying, but effective aspect of ESPN's site is that they place an leaderboard ad right below the scoreboard and sometimes when you mouse down towards the main content, the ad comes spiraling out. This is a huge annoyance for me, but has to be a great aspect for advertisers. I have, admittedly, stopped and watched a video or two when it opened because it looked interesting.</p>
+	<h3>Smashing Magazine</h3>
+	<p>I look to Smashing, more often than not, for sweet wallpapers. But they also have excellent articles about the digital world. Oddly enough, when I started writing this I realized they had a different design from the last tiem I opened this site.</p>
+	<p>This new design is incredibly sleek and simple looking. The responsive design is also great, as it displays well on my phone as well. Much like TheChive, this site is blog oriented and offers an "infnite scroll" of blog posts. The posts have nice little bits of content to tease and then the option to read more and ALWAYS feature an image. I like the pictures, not gonna lie. Also, the sweet sidebar with great headings makes my search of content/time wasting material more efficient.</p>
+	</div>
+</div>
+<div id="footer">
+<p>Technical Blog by Joey - 2014 Firecracker, Chicago DBC.</p>
+</div>
+</body>
+</html>
