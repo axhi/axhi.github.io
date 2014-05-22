@@ -61,12 +61,13 @@ nav li {
 	float:left;
 }
 nav li a {
-	font-size: .35em;
+	font-size: .3em;
 	font-family: sans-serif;
 	font-weight: normal;
 	text-decoration: none;
 	color: #000;
 	padding: 10px;
+	text-transform: lowercase;
 }
 nav li a:hover{
 	background: #2D3E50;
@@ -94,9 +95,11 @@ nav li a:hover{
 footer {
 	background: #1BBC9B;
 	padding: 8px 0;
+	height: 20px;
 }
 footer nav {
-	float:left;
+	position: absolute;
+	left: 0;
 }
 footer nav li {
 	float:left;
