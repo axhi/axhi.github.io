@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta charset=”utf-8”>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/blog.css">
+	 <title>Technical Blog</title>
+	</head>
+<body>
+<div id="header">
+	<h1>Technical Blog</h1>
+</div>
+<div id="body">
+	<div class="post">
+	<h2>I can ride my Enumerable#cycle</h2>
+	<h5>Joey S. - 6/7/14</h5>
+	<p>When I first ran the cycle method it looped my array forever and I thought, "why would anyone ever need this?" Then i saw that you can pass a parameter for how many times to run the cycle and I definitely saw some good use of this.</p>
+	<p>The cycle enumerable is great if you are trying to infintely iterate over an array. It can clean up your code and provide a much simplier solution to this issue.</p><blockquote class="code"> >> new_array = [1, 2, 3] <br>
+	>> 3.times { |x| p new_array[x % new_array.size] } <br>
+	1<br>2<br>3<br></blockquote>
+	<p>What this is doing is iterating each item of the array, for a total of 3 times, and print that to the screen. Now if we implement the Enumerable#cycle onto this same feature, we can do this much simplier with a cleaner block.</p>
+	<blockquote class="code"> >> new_array = [1, 2, 3] <br>
+	>> new_array.cycle(1) { |x| puts x }<br>
+	1<br>2<br>3<br></blockquote>
+	<p>This will give us the same thing, as it made 1 cycle through the array and put each result. The times operator seems better, however, as this will always make one complete cycle–but there is a way around that as well and lives in the Enumerator#next.</p>
+	<blockquote class="code"> >> new_array = [1, 2, 3]<br>
+	>> new_array = new_array.cycle<br>
+	>> new_array.next<br>
+	1<br>
+	>> new_array.next<br>
+	2</blockquote>
+	<p>This way you can select any element in the array while it is looping through the array.</p>
+	</div> 
+</div>
+<div id="footer">
+<p>Technical Blog by Joey - 2014 Firecracker, Chicago DBC.</p>
+</div>
+</body>
+</html>
