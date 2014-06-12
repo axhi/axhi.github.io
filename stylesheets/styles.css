@@ -19,25 +19,25 @@ p {
 	margin-bottom:5px;
 }
 h4 {
-	width: 40%;
 	height: 25px;
-	border:1px solid #E64C66;
-	text-align: center;
-	font-size:1.5em;
+	border-bottom:4px solid #E64C66;
+	font-size:1.3em;
 	padding-top:8px;
-	margin:10px;
+	padding-left: 10px;
+	margin:0 0 5px 0;
+	text-transform: uppercase;
 }
 h5 {
 	margin-left: 15px;
 	width: 320px;
 	height: 75px;
-	background: #1BBC9B;
+	background: #2D3E50;
 	margin-bottom: 10px;
 	display: inline-block;
 	text-align: center;
 	font-family: 'Rokkitt', serif;
 	padding-top:65px;
-	border: 1px solid #1BBC9B;
+	border: 1px solid #E64C66;
 }
 h5:hover {
 	background: none;
