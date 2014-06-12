@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<meta charset=”utf-8”>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/blog.css">
+	 <title>Technical Blog</title>
+	</head>
+<body>
+<div id="header">
+	<h1>Technical Blog</h1>
+</div>
+<div id="body">
+	<div class="post">
+	<h2>To the front of the Class please</h2>
+	<h5>Joey S. - 6/11/14</h5>
+	<p>Woohoo, Ruby Classes! These are pretty exciting and are, seemingly, an integral part of Ruby. Classes can be used when you need to create many instances of an object. I will be using the reference to building a house and checking to see how many bedrooms/bathrooms the house has. In Ruby, if you wanted to create this and check it for 10 different houses, you would need to write and run code for 10 different houses if you didn't use a class.</p>
+	<blockquote class="code">house1 = "Mueller House"<br>house1_bedrooms = 3<br> house1_bathrooms = 2<br>if house1_bedrooms > 2 ? "This is a big house" : "This house is tiny!" </blockquote>
+	<p>Now if we Eat.Sleep.Raved.Repeated this code, it would be extremely lengthy and our checks wouldn't even be that exciting. It is just long and ugly!</p>
+	<h3>Why/When</h3>
+	<p>Classes are used to create object instance. Ruby is, in fact, an object-oriented programming language. It is important to create objects and manipualte and use those objecst however you want. A class will let you create multiple objects with the same paramenters and affect them with those parameters. As I sated above, you really want to use these classes when working with multiple objects, which is quite often in Ruby. Well, that is enough about why and when, let's find out how!</p>
+	<h3>How</h3>
+	<p>First, we will want to create a new class. This can be done by using the code listed below. It is extremely important to note syntax here. Just like when defining a method you use a lowercase d in def, you use a lowercase c in class. The difference here is that all classes should be defined with a capital letter.</p>
+	<blockquote class="code">class House<br><br>end</blockquote>
+	<p>Presto! We have class lift-off. Now that the class is defined we will want to initialize the parameters. This is done by created a method for initialize that accepts the parameters you will feed each object.</p>
+	<blockquote class="code">class House<br>
+	<br>&nbsp;def initialize(house_name,num_rooms,num_bath)
+	<br>&nbsp;&nbsp;@house_name = house_name
+	<br>&nbsp;&nbsp;@num_rooms = num_rooms
+	<br>&nbsp;&nbsp;@num_bath = num_bath
+	<br>&nbsp;end
+	<br><br>end</blockquote>
+	<p>Now, a few things happened here. We initialized all the variables to instance variables, that is done by using the @ symbol. This means we can access these variables throughout any method, they are considered class variables. Instance variables are important so we don't have to continuously assign variables while working within the object. Now we can begin to create methods that utilizes the parameters we are passing each object. The methods will be <ul><li>a method to check how many rooms are in the house</li><li>a method to check how many bathrooms are in the house</li></ul></p>
+	<blockquote class="code">class House<br>
+	<br>&nbsp;def initialize(house_name,num_rooms,num_bath)
+	<br>&nbsp;&nbsp;@house_name = house_name
+	<br>&nbsp;&nbsp;@num_rooms = num_rooms
+	<br>&nbsp;&nbsp;@num_bath = num_bath
+	<br>&nbsp;end<br>
+	<br>&nbsp;def check_rooms
+	<br>&nbsp;&nbsp;@num_rooms <= 3 ? p "Your house is pretty regular size." : p "Um...that's a big house Kanye."
+	<br>&nbsp;end<br>
+	<br>&nbsp;def check_baths
+	<br>&nbsp;&nbsp;@num_bath > 1 ? p "Bathrooms are necessary, good thing you have some!" : p "Where do you pee?"
+	<br>&nbsp;end
+	<br><br>end</blockquote>
+	<p>Okay, awesome, we have methods, we have classes, we are using instance variables across methods...but what does that all mean? Good question. This code does nothign until we create a new object with the class given the parameters. This is done below.</p>
+	<blockquote class="code">house1 = House.new("Mueller's House",4,2)
+	<br>house2 = House.new("Sabani's House",2,0)
+	<br>house1.check_rooms
+	<br>>>"Um...that's a big house Kanye."
+	<br>house1.check_baths
+	<br>>>"Bathrooms are necessary, good thing you have some!"
+	<br>house2.check_rooms
+	<br>>>"Your house is pretty regular size."
+	<br>house2.check_baths
+	<br>>>"Where do you pee?"
+	</blockquote>
+	<p>As you can see, we ran just a few lines of codes to do these checks and we didn't have to run the code more than once. We created a new object by using the obj_name = Class.new(arguments). It is important that here, when class is initiated, we are running the method .new on the class (House). Then, to run the methods we just run them on the variable we assigned to the instnace of the new class, in our example house1 and house2. We call those methods much like we call any other method in Ruby, by .method_name(param). The class is a great way to keep things organized and produce timely results.</p>
+</div>
+<div id="footer">
+<p>Technical Blog by Joey - 2014 Firecracker, Chicago DBC.</p>
+</div>
+</body>
+</html>
