@@ -147,8 +147,11 @@ footer nav li a:hover{
 	background-color: #1BBC9B;
 	color: white;
 }
-@media handheld {
-.main {
+@media only screen and (max-device-width: 480px) {
+
+body {
 	max-width: 480px;
-	}	
+	background: black;
+}
+
 }
