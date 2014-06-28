@@ -97,8 +97,10 @@ body {
 }
 @media only screen and (max-device-width: 480px) {
 
-body {
+#body {
+	padding: 10px;
 	max-width: 480px;
+	margin: 0 auto;
 }
 
 }
