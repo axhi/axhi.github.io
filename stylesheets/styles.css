@@ -149,10 +149,6 @@ footer nav li a:hover{
 }
 @media only screen and (max-device-width: 480px) {
 
-body {
-	max-width: 480px;
-}
-
 header {
 	font-size: 1.5em;
 }
