@@ -88,7 +88,7 @@ nav li a {
 	font-weight: normal;
 	text-decoration: none;
 	color: #000;
-	padding: 10px;
+	padding: 12px;
 	text-transform: lowercase;
 }
 nav li a:hover{
@@ -138,4 +138,12 @@ footer nav li a:hover{
 	background: none;
 	text-decoration: none;
 	color:white;
+}
+.go-to-top {
+	position: fixed;
+	bottom: 0;
+	right: 10px;
+	padding:20px;
+	background-color: #1BBC9B;
+	color: white;
 }
