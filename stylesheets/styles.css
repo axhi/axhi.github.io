@@ -153,4 +153,10 @@ body {
 	max-width: 480px;
 }
 
+header {
+	height: 15px;
+	padding: 8px 0 0 5px;
+	font-size: 1.0em;
+}
+
 }
