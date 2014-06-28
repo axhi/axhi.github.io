@@ -95,3 +95,10 @@ body {
 	position: bottom;
 	font-size: .85em;
 }
+@media only screen and (max-device-width: 480px) {
+
+body {
+	max-width: 480px;
+}
+
+}
