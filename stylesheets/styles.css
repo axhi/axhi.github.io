@@ -70,30 +70,37 @@ h3 {
 }
 header {
 	background: #1BBC9B;
-	height: 37px;
 	color: white;
-	padding: 20px 0 0 10px;
+	padding: 20px 20px 3px 20px;
 	font-size: 3.3em;
 	font-family: 'Rokkitt', serif;
 }
-nav {
+header h1 {
+  padding-left: 10px;
+}
+header nav {
 	float:right;
+	margin-left: 10px;
+	font-size: .4em;
 }
-nav li {
+header nav li {
 	float:left;
-}
-nav li a {
-	font-size: .3em;
-	font-family: sans-serif;
-	font-weight: normal;
 	text-decoration: none;
-	color: #000;
-	padding: 12px;
-	text-transform: lowercase;
+	line-height: 25px;
+	margin: 10px;
+	color: white;
 }
-nav li a:hover{
+header nav a:hover{
 	background: #2D3E50;
 	color: #E64C66;
+	padding: 5px;
+	text-decoration: none;
+}
+header:after {
+  /* clearfix hack */
+  content: "";
+  display: table;
+  clear: both;
 }
 #about h3 {
 	background: #E64C66;
