@@ -41,7 +41,7 @@ inc:
   
   # Setup your fonts, colors etc at _assets/stylesheets/main.scss
 
-url:         http://axhi.github.io
+url:         http://axhi.github.io/jekyll
 source:      .
 destination: ./_site
 plugins:     ./_plugins
