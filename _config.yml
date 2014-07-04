@@ -1,13 +1,13 @@
 inc:
   # Blog Information
-  title:        "Jekyll Incorporated"
-  subtitle:     "Modern Jekyll based blog for companies"
+  title:        "Joey Sabani"
+  subtitle:     "a DBC blog experiment"
   cover_image:  blog-cover.jpg
   logo:         logo.png
   
   # Company information
-  company:      Incorporated
-  url:          http://sendtoinc.com/
+  company:      joey.sabani
+  url:          http://axhi.github.io
   facebook:     sendtoinc
   twitter:      sendtoinc
   gplus:        '101183822199340201470'
