@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<meta charset=”utf-8”>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/blog.css">
+	 <title>Technical Blog</title>
+	</head>
+<body>
+<div id="header">
+	<h1>Technical Blog</h1>
+</div>
+<div id="body">
+	<div class="post">
+	<h2>Active Record</h2>
+	<h5>Joey S. - 7/6/14</h5>
+	<p>Wo-hoo! Active record! While one would not regularly address something such as Active Record with such excitement and enthusiasm, it is extremely important to the Model-View-Controller (MVC) model which Ruby relies on. Active record handles the transformation of data from a database, such as a SQL table, to a Ruby object.</p>
+	<p>The great thing about Active Record is that you can bypass SQL statements and queries by just using ActiveRecord to map the database row and perform the function for you. And then you can create models to represent table rows and headings.</p>
+	<p>As an example, we can go through a table for a user profile.</p>
+	<blockquote class="code">class Users < ActiveRecord::Base <br> end</blockquote>
+	<p>This assigns the Users class to the table of the same name. Now, however the table was created, we can call methods from the class, after creating a new one based on our table schema.</p>
+	<blockquote class="code">CREATE TABLE users ( <br>
+	id int NOT NULL auto_increment,<br>
+	username varchar(255),<br>
+	email varchar(255),<br>
+	age int<br> );</blockquote>
+	<p>From that SQL table we can now call all these elements after making a new class from our ActiveRecord class above.</p>
+	<blockquote class="code">user1 = Users.new<br>
+	user1.name = "John Smith"<br>
+	user1.email = "jsmith@jsmith.com<br>
+	user1.age = 25</blockquote>
+	<p>Now when we call these elements, they will populate from the database we setup. Following the CRUD method, which is Create, Read, Update, Delete - modifications can be made the table and actions cal be called as it is stored in an array type object that can be iterated and what have you.</p>
+	</div>
+<div id="footer">
+<p>Technical Blog by Joey - 2014 Firecracker, Chicago DBC.</p>
+</div>
+</body>
+</html>
