@@ -123,13 +123,14 @@ header:after {
 #contact li {
 	float:left;
 	padding: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	margin-top: 0;
 }
 footer {
 	background: #1BBC9B;
 	padding: 8px 0;
 	height: 20px;
+	margin:0;
 }
 footer nav {
 	position: absolute;
