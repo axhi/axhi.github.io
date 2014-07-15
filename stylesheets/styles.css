@@ -20,16 +20,15 @@ p {
 }
 h4 {
 	height: 25px;
-	border-bottom:4px solid #E64C66;
 	font-size:1.3em;
 	padding-top:8px;
 	padding-left: 10px;
 	margin:0 0 5px 0;
-	text-transform: uppercase;
+	text-transform: lowercase;
 }
 h5 {
 	margin-left: 15px;
-	width: 40%;
+	width: 45%;
 	background: #2D3E50;
 	margin-bottom: 10px;
 	display: inline-block;
@@ -60,9 +59,6 @@ h3 {
 	line-height: .85em;
 	color:black;
 	font-size: 3.5em;
-}
-
-.main {	
 }
 .name {
 	font-family: sans-serif;
@@ -107,14 +103,26 @@ header:after {
   display: table;
   clear: both;
 }
-#about h3 {
+.wrapper {
+	min-width: 650px;
+	height: 100%;
+}
+.left {
+	display: inline;
+	float: left;
+	width: 29%;
+	max-width: 29%;
+}
+#work {
+	float:right;
+	width: 70%;
+	display: inline;
+}
+.left h3 {
 	background: #E64C66;
 }
 #work h3 {
 	background: #AEAEAE;
-}
-#contact h3 {
-	background: #2D3E50;
 }
 #contact ul {
 	margin: 0 0 40px 0;
@@ -131,9 +139,11 @@ footer {
 	padding: 10px 0;
 	height: 20px;
 	margin:0;
+	position: fixed;
+	bottom: 1px;
 }
 footer nav {
-	position: absolute;
+	position: relative;
 	left: 0;
 }
 footer nav li {
@@ -159,6 +169,7 @@ footer nav li a:hover{
 	padding:20px;
 	background-color: #1BBC9B;
 	color: white;
+	z-index: 1;
 }
 @media only screen and (max-device-width: 480px) {
 
@@ -177,8 +188,13 @@ header {
 }
 
 nav li a {
-	font-size: .8em;
 	padding: 5px;
 }
 
+#about {
+	float: none;
+}
+#work {
+	float:none;
+}
 }
