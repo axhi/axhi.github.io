@@ -248,5 +248,11 @@ nav li a {
 	width: 100%;
 	display: block;
 }
+img {
+	max-width: 480px;
+}
+header nav {
+	font-size: 1.0em;
+}
 
 }
