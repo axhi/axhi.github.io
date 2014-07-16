@@ -238,8 +238,8 @@ nav li a {
 }
 
 .right {
-	width: 29%;
-	max-width: 29%;
+	width: 100%;
+	max-width: 100%;
 	display: block;
 	float: none;
 }
