@@ -26,13 +26,73 @@
 		<blockquote class="h2">"Any fool can know. The point is to understand." <span class="name"><br>- Albert Einstein</span></blockquote>
 	</section>
 	<div class="wrapper">
-	<section id="about" class="left">
+	<section id="about" class="right">
 		<h3>About</h3>
 			<p>Hello and welcome! You have found this site through a link I have shared, most likely. If not, I guess...welcome?</p>
 			<p>My background has me dabbling in all these: communications, marketing, business, hot dogs, paintball, video editing, video production, project management, web development, graphic design, app development, print layout design, snowboarding and much much more. Those keywords have applied to my job/education for the past 10 years. I graduated with my B.S. from University of Wisconsin in Communications, an A.A.S. in Video and Motion Graphics, as well as an M.B.A. from University of Wisconsin - Madison.</p>
 			<p>But right now, and for the next couple of months I will just be - Joey, Chicago Bobolinks DBC hopeful.</p>
 	</section>
-	<section id="work">
+	<section id="blog" class="left">
+		<h3>blog</h3>
+		<article>
+			<div class="post">
+	<h2>Ask away</h2>
+	<h5>Joey S. - 7/13/14</h5>
+	<p>The art of asking a 'good question' is quickly becoming a very important aspect of my coding thus far. I often find myself searching the Internet for an answer to a puzzling question re our DBC prep work thus far. It would be easy to search the question in its entirety but that would just give you results that tell you the entire answer and not how to get there.</p>
+	<p>I have asked countless questions in my life thus far and can only imagine that number will continuously grow. I haven't really written down a lot of questions so I went to stackoverflow to seek out a question to review and here is what I found.</p>
+	<blockquote class="code"><b>Ruby Basic authentication</b><br><br>I want to build an application that will be making a request to twitter search api using the basic authentication method. In my searches, I came across this following piece of code using rest-client package:<br><br>
+	resource = RestClient::Resource.new('http://example.com', :user => 'user', :password => 'password')<br><br>
+	however it returned 'bad request: 400'<br><br>
+	Can anyone advise?</blockquote>
+	<p>First, I think the title doesn't at all build into what the question is, and is a little misleading. That is an immediate turn off from this question to anyone that may be of help with authentication or vice versa. The question, itself is detailed and provides a lot of helpful insight for people looking to answer it. The asker is specific and really delves into what they are looking for.</p>
+	<p>The big issue with this question is that they don't provide any output for their error here so the first poster found that and asked a new question in response. If the output posts here and the user community is able to post an answer, the asker would have been better positioned had they responded with that initially.</p>
+	</div>
+	<div class="post">
+	<h2>Active Record</h2>
+	<h5>Joey S. - 7/6/14</h5>
+	<p>Wo-hoo! Active record! While one would not regularly address something such as Active Record with such excitement and enthusiasm, it is extremely important to the Model-View-Controller (MVC) model which Ruby relies on. Active record handles the transformation of data from a database, such as a SQL table, to a Ruby object.</p>
+	<p>The great thing about Active Record is that you can bypass SQL statements and queries by just using ActiveRecord to map the database row and perform the function for you. And then you can create models to represent table rows and headings.</p>
+	<p>As an example, we can go through a table for a user profile.</p>
+	<blockquote class="code">class Users < ActiveRecord::Base <br> end</blockquote>
+	<p>This assigns the Users class to the table of the same name. Now, however the table was created, we can call methods from the class, after creating a new one based on our table schema.</p>
+	<blockquote class="code">CREATE TABLE users ( <br>
+	id int NOT NULL auto_increment,<br>
+	username varchar(255),<br>
+	email varchar(255),<br>
+	age int<br> );</blockquote>
+	<p>From that SQL table we can now call all these elements after making a new class from our ActiveRecord class above.</p>
+	<blockquote class="code">user1 = Users.new<br>
+	user1.name = "John Smith"<br>
+	user1.email = "jsmith@jsmith.com<br>
+	user1.age = 25</blockquote>
+	<p>Now when we call these elements, they will populate from the database we setup. Following the CRUD method, which is Create, Read, Update, Delete - modifications can be made the table and actions cal be called as it is stored in an array type object that can be iterated and what have you.</p>
+	</div>
+	<div class="post">
+	<h2>"a serious disagreement or argument, typically a protracted one."</h2>
+	<h5>Joey S. - 7/6/14</h5>
+	<center><img src="unit1_projects/images/conflict.jpg" title="conflict"></center>
+	<p>That is the definition of a conflict, according to Google. I experience a conflict at work on a daily basis. It is the nature of working with so many different people at any given time. Opinions will differ, ideas will clash and that is the nature of the beast.</p>
+	<h3>Personal conflict</h3>
+	<p>A typical conflict is the difference of personal taste. As a designer, we have developed our own taste in items and believe that is the end all situation in a lot of cases. Well, we aren't the only ones that see things this way. A lot of our clients have an idea in their mind of what they want an end product to look like so when it isn't <em>exactly</em> that, heads will clash. </p>
+	<h3>Source of the conflict</h3>
+	<p>The source of one typical conflict was that what I believed was a good design wasn't the same as what my client believed was a good design for the specified project.</p>
+	<h3>How was it handled?</h3>
+	<p>I handle most all of my conflicts at work the same way; as they are the client and I am, essentially, designing the piece for them I try to make my case and accept that their decision is final. For the specific conflict I recommended a certain layout for a piece, bringing emphasis to an area of the print material that I felt was important but the client thought overshadowed what they believed was the main concern. So, in the end, I did what the client asked and they were happy.</p>
+	<h3>How did my actions affect the conflict?</h3>
+	<p>Well, I think my actions made that specific conflict better but in the long run it has an adverse affect on my ability to sell my point. As a constant push-over, my opinion is heard I'm sure, but my customers probably know that I will give them what they want, even if I think it isn't a great product.</p>
+	<h3>Looking forward</h3>
+	<p>Things I really want to do moving forward are to be more assertive in my ideas and my skills as a professional and make stronger cases for what I think may be useful/effective in the world that is my profession. Going back I wouldn't really change much as the client was happy and the job got done on time, however. Also, in a deadline driven field, sometimes you don't have time to argue your point with someone that isn't willing to 'see it your way'.</p>
+	</div>
+		</article>
+	</section>
+		<section id="contact" class="right">
+		<h3>Contact</h3>
+		<ul>
+		<li><a href="http://github.com/axhi"><i class="fa fa-github fa-2x"></i></a></li>
+		<li><a href="mailto:axhi12@gmail.com"><i class="fa fa-paper-plane-o fa-2x"></i></a></li>
+		<li><a href="http://www.twitter.com/sabanimals"><i class="fa fa-twitter fa-2x"></i></a></li></ul>
+	</section>
+	<section id="work" class="left">
 		<h3>Work</h3>
 		<article>
 			<div class="week"><h4>Week 9</h4>
@@ -70,13 +130,6 @@
 				<a href="unit1_projects/week3_cultural_blog.html"><h5>Cultural Blog Post</h5></a>
 			</div>	
 		</article>
-	</section>
-		<section id="contact" class="left">
-		<h3>Contact</h3>
-		<ul>
-		<li><a href="http://github.com/axhi"><i class="fa fa-github fa-2x"></i></a></li>
-		<li><a href="mailto:axhi12@gmail.com"><i class="fa fa-paper-plane-o fa-2x"></i></a></li>
-		<li><a href="http://www.twitter.com/sabanimals"><i class="fa fa-twitter fa-2x"></i></a></li></ul>
 	</section>
 	</div>
 </body>

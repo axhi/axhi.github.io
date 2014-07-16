@@ -17,6 +17,7 @@ p {
 	font-size:1.1em;
 	padding: 10px;
 	font-family: palatino, "times new roman", serif;
+	margin-right: 5px;
 }
 h4 {
 	height: 25px;
@@ -104,24 +105,23 @@ header:after {
   clear: both;
 }
 .wrapper {
-	min-width: 650px;
 	height: 100%;
 }
-.left {
+.right {
 	display: inline;
-	float: left;
+	float: right;
 	width: 29%;
 	max-width: 29%;
 }
-#work {
-	float:right;
+.left {
+	float:left;
 	width: 70%;
 	display: inline;
 }
-.left h3 {
+.right h3 {
 	background: #E64C66;
 }
-#work h3 {
+.left h3 {
 	background: #AEAEAE;
 }
 #contact ul {
@@ -129,10 +129,11 @@ header:after {
 	padding:0;
 }
 #contact li {
-	float:left;
+	float:right;
 	padding: 10px;
 	margin-bottom: 30px;
 	margin-top: 0;
+	margin-right: 10px;
 }
 footer {
 	background: #1BBC9B;
@@ -171,6 +172,51 @@ footer nav li a:hover{
 	color: white;
 	z-index: 1;
 }
+.post {
+	border-bottom: 1px solid #ccc;
+}
+.post h2 {
+	font-size: 1.6em;
+	margin: 15px 0 0 10px;
+}
+.post h3 {
+	background: none;
+	color: black;
+	font-size: 1.1em;
+	margin: 0 0 -10px 10px;
+	text-align: left;
+	font-family: 'Rokkitt', serif;
+	text-transform: lowercase;
+	padding-top:7.5px;
+	height: 20px;
+}
+.post h5 {
+	margin:-10px 0 0 15px;
+	width: 100%;
+	background: none;
+	text-align:left;
+	font-family: 'Times' serif;
+	padding:0;
+	font-size: .95em;
+	border: none;
+	color: black;
+}
+.post p {
+	line-height: 1.2em;
+}
+.post ol {
+	font-size: .85em;
+	line-height: 1.2em;
+}
+.code {
+	background: #f0f0f0;
+	padding:10px;
+	font-family: monospace;
+	font-weight: 100;
+	border: 1px solid #dedede;
+	width: 80%;
+	margin: 20px;
+}
 @media only screen and (max-device-width: 480px) {
 
 header {
@@ -191,16 +237,16 @@ nav li a {
 	padding: 5px;
 }
 
-.left {
+.right {
+	width: 29%;
+	max-width: 29%;
 	display: block;
 	float: none;
+}
+.left {
+	float:none;
 	width: 100%;
-	max-width: 100%;
+	display: block;
 }
 
-#work {
-	display: block;
-	float: none;
-	width: 100%;
-}
 }
