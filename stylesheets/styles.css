@@ -1,6 +1,6 @@
 /* Main styles */
 body {
-	background: #FFF;
+	background: #ECF0F1;
 	font-size: 14px;
 	line-height: 1.5em;
 	font-family: sans-serif;
@@ -117,12 +117,18 @@ header:after {
 	float:left;
 	width: 70%;
 	display: inline;
+	background: white;
+	-webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
 }
 .right h3 {
 	background: #E64C66;
 }
 .left h3 {
 	background: #AEAEAE;
+	text-align: right;
+	padding-right: 10px;
 }
 #contact ul {
 	margin: 0 0 40px 0;
@@ -176,8 +182,9 @@ footer nav li a:hover{
 	border-bottom: 1px solid #ccc;
 }
 .post h2 {
-	font-size: 1.6em;
+	font-size: 1.8em;
 	margin: 15px 0 0 10px;
+	color:#1BBC9B;
 }
 .post h3 {
 	background: none;
@@ -191,11 +198,11 @@ footer nav li a:hover{
 	height: 20px;
 }
 .post h5 {
-	margin:-10px 0 0 15px;
+	margin:5px 0 0 10px;
 	width: 100%;
 	background: none;
 	text-align:left;
-	font-family: 'Times' serif;
+	font-family: sans-serif;
 	padding:0;
 	font-size: .95em;
 	border: none;
