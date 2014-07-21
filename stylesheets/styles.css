@@ -104,9 +104,9 @@ header:after {
   display: table;
   clear: both;
 }
-.wrapper {
+/*.wrapper {
 	height: 100%;
-}
+}*/
 .right {
 	display: inline;
 	float: right;
@@ -227,7 +227,7 @@ footer nav li a:hover{
 @media only screen and (max-device-width: 480px) {
 
 header {
-	font-size: 1.5em;
+	font-size: 1.8em;
 }
 
 .h2 {
@@ -256,7 +256,7 @@ nav li a {
 	display: block;
 }
 header nav {
-	font-size: 1.0em;
+	font-size: .90em;
 }
 
 }
