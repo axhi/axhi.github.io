@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>joey.in_progress</title>
+    <description>personal blog about my time as a new web developer</description>
+    <link>http://axhi.github.io/</link>
+    <atom:link href="http://axhi.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 27 Jul 2014 22:37:49 -0500</pubDate>
+    <lastBuildDate>Sun, 27 Jul 2014 22:37:49 -0500</lastBuildDate>
+    <generator>Jekyll v2.1.0</generator>
+    
+      <item>
+        <title>Two weeks down, seven to go...</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/solong.jpeg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It has been far too long since my last post and it isn’t because I’ve been crazy busy…which I have been, but more that my exhaustion level after a day at DBC is so high that I just want to unwind at the end of the day.&lt;/p&gt;
+
+&lt;p&gt;This week consisted of a mock-assessment to properly analyze our status with the material at this point and mine went pretty well. The days are packed with excitement, frustration, enlightenment, fear and possibly all ranges of emotions you could think of. We have lectures, emotional empathy training, stand-ups, pairing sessions, assessments, code reviews and many other new things every day. My time has been so fulfilling thus far and I am extremely eager to get up every morning and start a new day at DBC.&lt;/p&gt;
+
+&lt;p&gt;My Chicago life has been pretty awesome thus far as well. I have had Portillo’s like 4 times and have no plans on slowing down. I wish I had more time to see more of the city and go out and about but my addiction to learning doesn’t allow me much escape.&lt;/p&gt;
+
+&lt;p&gt;I’m now realizing this blog post is jumping all over the place, and I apologize for that. I, in conclusion, wanted to write a little about things I’ve learned thus far. Some key points are object oriented design, data parsing and command line arguments. It is a little odd to realize we are spending so much time in the command line when in just 1 short week, we will jump heavily into the web but the building blocks are essential. The programs I’m writing now are so much more sophisticated and complex than anything I’ve done to before today and could not be happier about it. I’ll look at a snippet of my code for parsing CSV data.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@list&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@list&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;CSV&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foreach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;todo.csv&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+        &lt;span class=&quot;vi&quot;&gt;@list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; adds each item to the list array.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Two weeks ago, I wouldn’t have exactly known what was going on on the above code and I’ll try and explain as best I can here. First I am using the &lt;code&gt;CSV&lt;/code&gt; class for Ruby so I will need to require it at the top of my document. Then, I have a method called read_file that takes no parameters.&lt;/p&gt;
+
+&lt;p&gt;The next line is basically a little “only run this method one time” check. It will return the list of a list exists. It is a little check trick I learned here at DBC. &lt;code&gt;@list&lt;/code&gt; is a class variable as can be denoted by the &lt;code&gt;@&lt;/code&gt; symbol. You don’t know it from this snippet but I have initialized this class with &lt;code&gt;@list = nil&lt;/code&gt;. That is our way of making the return line work. The first check is saying &lt;code&gt;return @list&lt;/code&gt; if it exists, and since we set it to nil, it doesn’t.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;CSV&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foreach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;todo.csv&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This line is where all the magic happens. To learn a bit more about the Ruby CSV class, click &lt;a href=&quot;http://ruby-doc.org/stdlib-1.9.2/libdoc/csv/rdoc/CSV.html&quot;&gt;here&lt;/a&gt;. So this is calling the CSV class and running a foreach on it by passing the parameter of a filename to it. The do &lt;code&gt;|item|&lt;/code&gt; snippet is a way of running the method iteratively and return the block of code for each line that .foreach returns.&lt;/p&gt;
+
+&lt;p&gt;The method takes a CSV file, parses each line, and returns the line into a new Task object. I didn’t do the best job explaining this, I can tell, but it makes total sense to me. I’m excited that I’m learning-and learning so fast.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 25 Jul 2014 07:05:10 -0500</pubDate>
+        <link>http://axhi.github.io/dbc/phase-1/2014/07/25/two-weeks-down/</link>
+        <guid isPermaLink="true">http://axhi.github.io/dbc/phase-1/2014/07/25/two-weeks-down/</guid>
+        
+        
+        <category>dbc</category>
+        
+        <category>phase-1</category>
+        
+      </item>
+    
+      <item>
+        <title>Ask away</title>
+        <description>&lt;p&gt;The art of asking a ‘good question’ is quickly becoming a very important aspect of my coding thus far. I often find myself searching the Internet for an answer to a puzzling question re our DBC prep work thus far. It would be easy to search the question in its entirety but that would just give you results that tell you the entire answer and not how to get there.&lt;/p&gt;
+
+&lt;p&gt;I have asked countless questions in my life thus far and can only imagine that number will continuously grow. I haven’t really written down a lot of questions so I went to stackoverflow to seek out a question to review and here is what I found.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;Ruby&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Basic&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;authentication&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;want&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;an&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;application&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;that&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;will&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;making&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;twitter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;search&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;api&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;basic&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;authentication&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; 
+&lt;span class=&quot;no&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;searches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;came&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;across&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;following&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;piece&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;code&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;client&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;package&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;resource&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;RestClient&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Resource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;http://example.com&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+&lt;span class=&quot;ss&quot;&gt;:user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;user&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:password&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;password&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;however&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;it&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;returned&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;bad request: 400&amp;#39;&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;Can&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anyone&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;advise?&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;First, I think the title doesn’t at all build into what the question is, and is a little misleading. That is an immediate turn off from this question to anyone that may be of help with authentication or vice versa. The question, itself is detailed and provides a lot of helpful insight for people looking to answer it. The asker is specific and really delves into what they are looking for.&lt;/p&gt;
+
+&lt;p&gt;The big issue with this question is that they don’t provide any output for their error here so the first poster found that and asked a new question in response. If the output posts here and the user community is able to post an answer, the asker would have been better positioned had they responded with that initially.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 13 Jul 2014 07:05:10 -0500</pubDate>
+        <link>http://axhi.github.io/cultural/dbc/2014/07/13/ask-away/</link>
+        <guid isPermaLink="true">http://axhi.github.io/cultural/dbc/2014/07/13/ask-away/</guid>
+        
+        
+        <category>cultural</category>
+        
+        <category>dbc</category>
+        
+      </item>
+    
+      <item>
+        <title>Active Record</title>
+        <description>&lt;p&gt;Wo-hoo! Active record! While one would not regularly address something such as Active Record with such excitement and enthusiasm, it is extremely important to the Model-View-Controller (MVC) model which Ruby relies on. Active record handles the transformation of data from a database, such as a SQL table, to a Ruby object.&lt;/p&gt;
+
+&lt;p&gt;The great thing about Active Record is that you can bypass SQL statements and queries by just using ActiveRecord to map the database row and perform the function for you. And then you can create models to represent table rows and headings.&lt;/p&gt;
+
+&lt;p&gt;As an example, we can go through a table for a user profile.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Users&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This assigns the Users class to the table of the same name. Now, however the table was created, we can call methods from the class, after creating a new one based on our table schema.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;auto_increment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;username&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;email&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;varchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;From that SQL table we can now call all these elements after making a new class from our ActiveRecord class above.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;user1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Users&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;user1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;John Smith&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;user1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;email&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;jsmith@jsmith.com&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;user1.age = 25&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now when we call these elements, they will populate from the database we setup. Following the CRUD method, which is Create, Read, Update, Delete - modifications can be made the table and actions cal be called as it is stored in an array type object that can be iterated and what have you.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 06 Jul 2014 07:05:10 -0500</pubDate>
+        <link>http://axhi.github.io/dbc/phase-0/active-record/2014/07/06/active-record/</link>
+        <guid isPermaLink="true">http://axhi.github.io/dbc/phase-0/active-record/2014/07/06/active-record/</guid>
+        
+        
+        <category>dbc</category>
+        
+        <category>phase-0</category>
+        
+        <category>active-record</category>
+        
+      </item>
+    
+  </channel>
+</rss>

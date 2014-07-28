@@ -1,0 +1,13 @@
+# Site settings
+title: joey.in_progress
+email: joey.sabani@gmail.com
+description: "a work in progress"
+baseurl: ""
+url: "http://axhi.github.io"
+twitter_username: sabanimals
+github_username:  axhi
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+paginate: 3
