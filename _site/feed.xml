@@ -2,12 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>joey.in_progress</title>
-    <description>personal blog about my time as a new web developer</description>
+    <description>a work in progress</description>
     <link>http://axhi.github.io/</link>
     <atom:link href="http://axhi.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 27 Jul 2014 22:37:49 -0500</pubDate>
-    <lastBuildDate>Sun, 27 Jul 2014 22:37:49 -0500</lastBuildDate>
+    <pubDate>Sun, 27 Jul 2014 23:01:34 -0500</pubDate>
+    <lastBuildDate>Sun, 27 Jul 2014 23:01:34 -0500</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
+    
+      <item>
+        <title>New site backbone</title>
+        <description>&lt;p&gt;As you may have noticed, this little website of mine has a little bit of a new layout. The main changes I made were to use a Jekyll backbone to run my posts and website. I’m still hosting on Github (as is evident by the url) but I want everyone to stick with me while I work on making this site awesome!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 27 Jul 2014 07:05:10 -0500</pubDate>
+        <link>http://axhi.github.io/website/changes/2014/07/27/jekyll-switch/</link>
+        <guid isPermaLink="true">http://axhi.github.io/website/changes/2014/07/27/jekyll-switch/</guid>
+        
+        
+        <category>website</category>
+        
+        <category>changes</category>
+        
+      </item>
     
       <item>
         <title>Two weeks down, seven to go...</title>
