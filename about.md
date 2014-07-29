@@ -9,3 +9,4 @@ My background has me dabbling in all these: communications, marketing, business,
 
 But right now, and for the next couple of months I will just be - Joey, Chicago Bobolinks DBC hopeful.
 
+![skyline](/assets/skyline.png)
