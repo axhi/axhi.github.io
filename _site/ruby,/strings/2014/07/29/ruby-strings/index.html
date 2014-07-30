@@ -4,11 +4,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>joey.in_progress</title>
+    <title>Ruby Strings, the difference between ' and ''</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="a work in progress">
     <link href="http://fonts.googleapis.com/css?family=Rokkitt:700" rel="stylesheet" type="text/css">
-    <link rel="canonical" href="http://axhi.github.io/">
+    <link rel="canonical" href="http://axhi.github.io/ruby,/strings/2014/07/29/ruby-strings/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -55,63 +55,47 @@
 </header>
     <div class="page-content">
       <div class="wrap">
-      <h3 class="main-quote">"any fool can know. the point is to understand."</h3>
-<h5 class="main-quote-by">- <em>Albert Einstein</em></h5>
-<div class="home">
+      <div class="post">
 
-  <h1>Posts</h1>
+  <header class="post-header">
+    <h1>Ruby Strings, the difference between ' and ''</h1>
+    <p class="meta">Jul 29, 2014</p>
+  </header>
 
-  <ul class="posts">
-    
-      <li>
-        <span class="post-date">Jul 29, 2014</span>
-        <a class="post-link" href="/ruby,/strings/2014/07/29/ruby-strings/">Ruby Strings, the difference between ' and ''</a>
-         <span><p>Today we worked in SQL queries and writing Ruby to translate SQL database rows into Ruby objects. This, in itself, was just extremely exciting and warrants its own blog post, but today I want to write about the difference between using single and double quotes in Ruby.</p>
+  <article class="post-content">
+  <p>Today we worked in SQL queries and writing Ruby to translate SQL database rows into Ruby objects. This, in itself, was just extremely exciting and warrants its own blog post, but today I want to write about the difference between using single and double quotes in Ruby.</p>
 
-</span>
-        <span><a href="/ruby,/strings/2014/07/29/ruby-strings/">read more</a>...</span>
-      </li>
-    
-      <li>
-        <span class="post-date">Jul 27, 2014</span>
-        <a class="post-link" href="/website/changes/2014/07/27/jekyll-switch/">New site backbone</a>
-         <span><p>As you may have noticed, this little website of mine has a little bit of a new layout. The main changes I made were to use a Jekyll backbone to run my posts and website. I’m still hosting on Github (as is evident by the url) but I want everyone to stick with me while I work on making this site awesome!</p>
+<p>So, in the world of an actual <code>String</code>, Ruby does not necessarily care. If we have two strings:</p>
 
-</span>
-        <span><a href="/website/changes/2014/07/27/jekyll-switch/">read more</a>...</span>
-      </li>
-    
-      <li>
-        <span class="post-date">Jul 25, 2014</span>
-        <a class="post-link" href="/dbc/phase-1/2014/07/25/two-weeks-down/">Two weeks down, seven to go...</a>
-         <span><p><img src="/assets/solong.jpeg" alt="My helpful screenshot" /></p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">str1</span> <span class="o">=</span> <span class="s2">&quot;string one&quot;</span>
+<span class="n">str2</span> <span class="o">=</span> <span class="s1">&#39;string two&#39;</span>
 
-</span>
-        <span><a href="/dbc/phase-1/2014/07/25/two-weeks-down/">read more</a>...</span>
-      </li>
-    
-      <li>
-        <span class="post-date">Jul 13, 2014</span>
-        <a class="post-link" href="/cultural/dbc/2014/07/13/ask-away/">Ask away</a>
-         <span><p>The art of asking a ‘good question’ is quickly becoming a very important aspect of my coding thus far. I often find myself searching the Internet for an answer to a puzzling question re our DBC prep work thus far. It would be easy to search the question in its entirety but that would just give you results that tell you the entire answer and not how to get there.</p>
+<span class="nb">p</span> <span class="n">str1</span>
+<span class="c1">#=&gt; &quot;string one&quot;</span>
+<span class="nb">p</span> <span class="n">str2</span>
+<span class="c1">#=&gt; &quot;string two&quot;</span></code></pre></div>
 
-</span>
-        <span><a href="/cultural/dbc/2014/07/13/ask-away/">read more</a>...</span>
-      </li>
-    
-      <li>
-        <span class="post-date">Jul 6, 2014</span>
-        <a class="post-link" href="/dbc/phase-0/active-record/2014/07/06/active-record/">Active Record</a>
-         <span><p>Wo-hoo! Active record! While one would not regularly address something such as Active Record with such excitement and enthusiasm, it is extremely important to the Model-View-Controller (MVC) model which Ruby relies on. Active record handles the transformation of data from a database, such as a SQL table, to a Ruby object.</p>
+<p>Both <code>str1</code> and <code>str2</code> returned a string of the same format, no difference can be noticed. So, in this regard, using a single/double quote is solely preference. Some programmers feel the necessity to keep the code “clean” so they use single quotes, and others like the literal translation as in <code>this variable is a string</code>.</p>
 
-</span>
-        <span><a href="/dbc/phase-0/active-record/2014/07/06/active-record/">read more</a>...</span>
-      </li>
-    
-  </ul>
+<p>Now, the real fun begins when we look into interpolation and Ruby methods. If we were to try to send a command to a SQL database that looks like this:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">id</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="vg">$db_name</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+    <span class="s2">&quot;SELECT * FROM db_name WHERE id = </span><span class="si">#{</span><span class="nb">id</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="p">)</span>
+<span class="c1">#=&gt; id in this case would be 1</span>
+<span class="vg">$db_name</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+    <span class="s1">&#39;SELECT * FROM db_name WHERE id = #{id}&#39;</span>
+<span class="p">)</span>
+<span class="c1">#=&gt; id in this case would translate to \#{id}</span></code></pre></div>
+
+<p>As you can see from these two examples, using a single quotes would escape the <code>id</code>, not allowing us to search for the specific value. And since SQL requires you to send its statement as a string that is basically inputs into a terminal like command, you need to pass some form of string. You may be saying to yourself, “Joey, why don’t you just use the literal variable then?” Well, if we did that it would just pass a string id as the lookup value so we would still be in the same situation. </p>
+
+<p>While it may be cleaner to use single quotes for most situations, be very careful when you are needing to do some interpolation as the value will not translate to what you are looking for. Anyway, that is some basic Ruby string and single vs. double quote situations.</p>
+
+  </article>
 
 </div>
-
       </div>
     </div>
 

@@ -5,9 +5,52 @@
     <description>a work in progress</description>
     <link>http://axhi.github.io/</link>
     <atom:link href="http://axhi.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 28 Jul 2014 21:16:40 -0500</pubDate>
-    <lastBuildDate>Mon, 28 Jul 2014 21:16:40 -0500</lastBuildDate>
+    <pubDate>Tue, 29 Jul 2014 21:45:26 -0500</pubDate>
+    <lastBuildDate>Tue, 29 Jul 2014 21:45:26 -0500</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
+    
+      <item>
+        <title>Ruby Strings, the difference between &#39; and &#39;&#39;</title>
+        <description>&lt;p&gt;Today we worked in SQL queries and writing Ruby to translate SQL database rows into Ruby objects. This, in itself, was just extremely exciting and warrants its own blog post, but today I want to write about the difference between using single and double quotes in Ruby.&lt;/p&gt;
+
+&lt;p&gt;So, in the world of an actual &lt;code&gt;String&lt;/code&gt;, Ruby does not necessarily care. If we have two strings:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;str1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;string one&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;str2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;string two&amp;#39;&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str1&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &amp;quot;string one&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str2&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; &amp;quot;string two&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Both &lt;code&gt;str1&lt;/code&gt; and &lt;code&gt;str2&lt;/code&gt; returned a string of the same format, no difference can be noticed. So, in this regard, using a single/double quote is solely preference. Some programmers feel the necessity to keep the code “clean” so they use single quotes, and others like the literal translation as in &lt;code&gt;this variable is a string&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now, the real fun begins when we look into interpolation and Ruby methods. If we were to try to send a command to a SQL database that looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;vg&quot;&gt;$db_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&amp;quot;SELECT * FROM db_name WHERE id = &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; id in this case would be 1&lt;/span&gt;
+&lt;span class=&quot;vg&quot;&gt;$db_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;&amp;#39;SELECT * FROM db_name WHERE id = #{id}&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; id in this case would translate to \#{id}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;As you can see from these two examples, using a single quotes would escape the &lt;code&gt;id&lt;/code&gt;, not allowing us to search for the specific value. And since SQL requires you to send its statement as a string that is basically inputs into a terminal like command, you need to pass some form of string. You may be saying to yourself, “Joey, why don’t you just use the literal variable then?” Well, if we did that it would just pass a string id as the lookup value so we would still be in the same situation. &lt;/p&gt;
+
+&lt;p&gt;While it may be cleaner to use single quotes for most situations, be very careful when you are needing to do some interpolation as the value will not translate to what you are looking for. Anyway, that is some basic Ruby string and single vs. double quote situations.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 29 Jul 2014 07:05:10 -0500</pubDate>
+        <link>http://axhi.github.io/ruby,/strings/2014/07/29/ruby-strings/</link>
+        <guid isPermaLink="true">http://axhi.github.io/ruby,/strings/2014/07/29/ruby-strings/</guid>
+        
+        
+        <category>ruby,</category>
+        
+        <category>strings</category>
+        
+      </item>
     
       <item>
         <title>New site backbone</title>
