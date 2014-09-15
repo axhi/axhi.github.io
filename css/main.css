@@ -293,7 +293,9 @@ a:visited { color: #E64C66; }
 
 .post pre.terminal code { background-color: #333; }
 
-
+.section {
+  margin-bottom: 20px;
+}
 .section h1 {
   margin-bottom: 5px;
 }
