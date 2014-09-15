@@ -4,17 +4,48 @@ layout: default
 {% include quote.html %}
 <div class="home">
 
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-         <span>{{ post.excerpt }}</span>
-        <span><a href="{{ post.url | prepend: site.baseurl}}">read more</a>...</span>
-      </li>
-    {% endfor %}
-  </ul>
-
+  <div class="section">
+    <h1>about me</h1>
+    <p>I am a recent graduate of Dev Bootcamp, a 9-week intensive that teaches web development. During those 9 weeks I fell deeply in love with coding and the desire to continuously learn. I enjoy problem solving and coding has made the possible on so many new levels and languages. I would like to be on a team where I am pushed, can learn and have the ability to contribute.</p>
+    <h1>skills</h1>
+    <p>Ruby, Ruby on Rails, SQL (PostgreSQL & SQLite), JavaScript, jQuery, AngularJS, React, Underscore.js, Jasmine, RSpec, TDD, Active Record, Git, Heroku, MS Office Suite, Adobe Creative Suite, OSX</p>
+  </div>
+    
+  <div class="section">
+    <h1>select projects</h1>
+    <h2>browsin'</h2>
+    <p>browsin' provides users with an efficient way to search streaming movies and shows based on their subscriptions. Simplicity of the software and speed were top priorities for our team on this project. We decided to implement React as a front-end and I jumped at the opportunity. I wrote in React and used Javascript, jQuery and Ajax to round it out. Additionally, I was responsible for the user model/controller and authentication of that user.</p>
+    <h2>DoBoCo Source</h2>
+    <p>DoBoCo Source is a platform for organizing resources, much like Reddit or Hacker News. This project was especially fun because we were creating a resource for past, present and future students at DBC find helpful websites during the 9 weeks. For this project I wrote the Javascript, jQuery and Ajax calls for the front-end in addition to the controller and model for searching the database. </p>
+  </div>
+  
+  <div class="section">
+    <h1>Experience</h1>
+    <h2>Dev Bootcamp, Chicago, IL <span class="under">Student</span></h2>
+      <ul>
+        <li>Learned fundamentals of web development by coding complex logic problems</li>
+        <li>Practiced positive development habits like TDD and Separation of Concerns</li>
+        <li>In addition to the 70+ hours coding each week, I practiced non-technical skills like code reviews and feedback</li>
+      </ul>
+    
+    <h2>Credit Union National Association, Madison, WI <span class="under">Digital Media Specialist</span></h2>
+      <ul>
+        <li>Created and maintained web presence for periodicals</li>
+        <li>Developed mobile app using Conduit mobile system, written in HTML</li>
+        <li>Developed mobile app using Mag+ plugin for InDesign using macro</li>
+      </ul>
+  </div>
+  
+  <div class="section">
+    <h1>Education</h1>
+    <h2>University of Wisconsin – Whitewater  
+      <span class="under">Masters of Business Administration, 2013</span>
+    </h2>
+    <h2>University of Wisconsin – Madison 
+      <span class="under">Bachelor of Science, 2011</span>
+    </h2>
+    <h2>Madison Media Institute
+      <span class="under">Associate of Arts, 2011</span>
+    </h2>
+  </div>
 </div>
