@@ -299,6 +299,20 @@ a:visited { color: #E64C66; }
 .section h1 {
   margin-bottom: 5px;
 }
+
+.project {
+  margin-bottom: 10px;
+}
+
+.under {
+  display: block;
+  font-weight: 200;
+}
+
+.section li {
+  margin-left: 25px;
+}
+
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/
 
