@@ -151,6 +151,12 @@ a:visited { color: #E64C66; }
   top: 3px;
 }
 
+.about-me {
+  width: 300px;
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
 
 /* Page Content styles */
 /* ----------------------------------------------------------*/
