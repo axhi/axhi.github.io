@@ -4,11 +4,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Active Record</title>
+    <title>blog</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="a work in progress: join me on my journey into programming">
     <link href="http://fonts.googleapis.com/css?family=Rokkitt:700" rel="stylesheet" type="text/css">
-    <link rel="canonical" href="http://axhi.github.io/dbc/phase-0/active-record/2014/07/06/active-record/">
+    <link rel="canonical" href="http://axhi.github.io/posts/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -72,42 +72,80 @@
       <div class="post">
 
   <header class="post-header">
-    <h1>Active Record</h1>
-    <p class="meta">Jul 6, 14</p>
+    <h1>blog</h1>
   </header>
 
   <article class="post-content">
-  <p>Wo-hoo! Active record! While one would not regularly address something such as Active Record with such excitement and enthusiasm, it is extremely important to the Model-View-Controller (MVC) model which Ruby relies on. Active record handles the transformation of data from a database, such as a SQL table, to a Ruby object.</p>
+  <ul class="posts">
+  
+    <li>
+      <a class="post-link" href="/dbc,/assesment/2014/07/31/phase1-assessments/">Phase 1 assessments in the bag</a>
+              <span class="post-date">Jul 31, 2014</span>
+       <span><p>Woah, what a three week period. DBC has proved every bit exciting as I thought it would be. I have felt happy, angry, sad, excited, challenged, comforted, loved and basically any other emotion over the past 3 weeks. Today we were assessed on our understanding of the Phase 1 fundamentals and if the instructor’s felt we were ready to move onto the next part of the program. </p>
 
-<p>The great thing about Active Record is that you can bypass SQL statements and queries by just using ActiveRecord to map the database row and perform the function for you. And then you can create models to represent table rows and headings.</p>
+</span>
+      <span><a href="/dbc,/assesment/2014/07/31/phase1-assessments/">read more</a>...</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/ruby,/strings/2014/07/29/ruby-strings/">Ruby Strings, the difference between ' and ''</a>
+              <span class="post-date">Jul 29, 2014</span>
+       <span><p>Today we worked in SQL queries and writing Ruby to translate SQL database rows into Ruby objects. This, in itself, was just extremely exciting and warrants its own blog post, but today I want to write about the difference between using single and double quotes in Ruby.</p>
 
-<p>As an example, we can go through a table for a user profile.</p>
+</span>
+      <span><a href="/ruby,/strings/2014/07/29/ruby-strings/">read more</a>...</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/website/changes/2014/07/27/jekyll-switch/">New site backbone</a>
+              <span class="post-date">Jul 27, 2014</span>
+       <span><p>As you may have noticed, this little website of mine has a little bit of a new layout. The main changes I made were to use a Jekyll backbone to run my posts and website. I’m still hosting on Github (as is evident by the url) but I want everyone to stick with me while I work on making this site awesome!</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">Users</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
-<span class="k">end</span></code></pre></div>
+</span>
+      <span><a href="/website/changes/2014/07/27/jekyll-switch/">read more</a>...</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/dbc/phase-1/2014/07/25/two-weeks-down/">Two weeks down, seven to go...</a>
+              <span class="post-date">Jul 25, 2014</span>
+       <span><p><img src="/assets/solong.jpeg" alt="My helpful screenshot" /></p>
 
-<p>This assigns the Users class to the table of the same name. Now, however the table was created, we can call methods from the class, after creating a new one based on our table schema.</p>
+</span>
+      <span><a href="/dbc/phase-1/2014/07/25/two-weeks-down/">read more</a>...</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/cultural/dbc/2014/07/13/ask-away/">Ask away</a>
+              <span class="post-date">Jul 13, 2014</span>
+       <span><p>The art of asking a ‘good question’ is quickly becoming a very important aspect of my coding thus far. I often find myself searching the Internet for an answer to a puzzling question re our DBC prep work thus far. It would be easy to search the question in its entirety but that would just give you results that tell you the entire answer and not how to get there.</p>
 
-<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">users</span> <span class="p">(</span>
-    <span class="n">id</span> <span class="nb">int</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="n">auto_increment</span><span class="p">,</span>
-    <span class="n">username</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span>
-    <span class="n">email</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span>
-    <span class="n">age</span> <span class="nb">int</span>
-<span class="p">);</span></code></pre></div>
+</span>
+      <span><a href="/cultural/dbc/2014/07/13/ask-away/">read more</a>...</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/dbc/phase-0/active-record/2014/07/06/active-record/">Active Record</a>
+              <span class="post-date">Jul 6, 2014</span>
+       <span><p>Wo-hoo! Active record! While one would not regularly address something such as Active Record with such excitement and enthusiasm, it is extremely important to the Model-View-Controller (MVC) model which Ruby relies on. Active record handles the transformation of data from a database, such as a SQL table, to a Ruby object.</p>
 
-<p>From that SQL table we can now call all these elements after making a new class from our ActiveRecord class above.</p>
+</span>
+      <span><a href="/dbc/phase-0/active-record/2014/07/06/active-record/">read more</a>...</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/ruby,/optimization/2014/06/24/hooray-for-optimization/">Hooray for optimization!</a>
+              <span class="post-date">Jun 24, 2014</span>
+       <span><p>SQL databases are an amazing tool and can do a ridiculous amount of things. The problem with amazing tools like this one is that can perform so many functions, which creates a whole slew of computer processing problems. So, as we learn about databases and how to create, manipulate, and store data we will also need to learn how to optimize these tables to return query results in the shortest amount of time possible.</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">user1</span> <span class="o">=</span> <span class="no">Users</span><span class="o">.</span><span class="n">new</span>
-<span class="n">user1</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;John Smith&quot;</span>
-<span class="n">user1</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s2">&quot;jsmith@jsmith.com</span>
-<span class="s2">user1.age = 25</span></code></pre></div>
-
-<p>Now when we call these elements, they will populate from the database we setup. Following the CRUD method, which is Create, Read, Update, Delete - modifications can be made the table and actions cal be called as it is stored in an array type object that can be iterated and what have you.</p>
+</span>
+      <span><a href="/ruby,/optimization/2014/06/24/hooray-for-optimization/">read more</a>...</span>
+    </li>
+  
+</ul>
 
   </article>
 
 </div>
-
       </div>
     </div>
 

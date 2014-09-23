@@ -91,7 +91,7 @@ a:visited { color: #E64C66; }
 
 .main-quote-by {
   font-size:1.1em;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 /* Site footer */
 
@@ -255,8 +255,9 @@ a:visited { color: #E64C66; }
   margin: 30px 0;
 }
 
+
 .post-content ul,
-.post-content ol { padding-left: 20px; }
+.post-content ol { padding-left: 0px; }
 
 .post pre,
 .post code {
@@ -273,7 +274,7 @@ a:visited { color: #E64C66; }
 .post code { padding: 1px 5px; }
 
 .post ul,
-.post ol { margin-left: 1.35em; }
+.post ol { margin-left: 0; }
 
 .post pre code {
   border: 0;
@@ -292,6 +293,47 @@ a:visited { color: #E64C66; }
 }
 
 .post pre.terminal code { background-color: #333; }
+
+.section {
+  margin-bottom: 20px;
+}
+.section h1 {
+  margin-bottom: 5px;
+}
+
+.project {
+  margin-bottom: 10px;
+}
+
+.under {
+  display: block;
+  font-weight: 200;
+}
+
+.section li {
+  margin-left: 25px;
+}
+
+/* Project */
+
+.projects {
+  width: 45%;
+  display: inline-table;
+  margin-right: 4%;
+  margin-bottom:10px;
+}
+
+.projects h3 {
+  font-size: 1.5em;
+}
+
+.projects h4 {
+  text-decoration: underline;
+}
+
+.project-img:hover {
+  opacity: .5;
+}
 
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/

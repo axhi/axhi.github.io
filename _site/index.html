@@ -19,6 +19,15 @@
     <body>
     <header class="site-header">
 
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-54876704-1', 'auto');
+        ga('send', 'pageview');
+  </script>
   <div class="wrap">
 
     <a class="site-title" href="/">joey.in_progress</a>
@@ -43,7 +52,11 @@
         
           
         
+          <a class="page-link" href="/posts/">blog</a>
+        
           <a class="page-link" href="/work/">work</a>
+        
+          
         
           
         
@@ -53,72 +66,68 @@
   </div>
 
 </header>
+
     <div class="page-content">
       <div class="wrap">
       <h3 class="main-quote">"any fool can know. the point is to understand."</h3>
 <h5 class="main-quote-by">- <em>Albert Einstein</em></h5>
 <div class="home">
 
-  <h1>Posts</h1>
-
-  <ul class="posts">
+  <div class="section">
+    <h1>about me</h1>
+    <p>I am a recent graduate of Dev Bootcamp, a 9-week intensive that teaches web development. During those 9 weeks I fell deeply in love with coding and the desire to continuously learn. I enjoy problem solving and coding has made that possible on so many new levels and languages. I would like to be on a team where I am challenged, can learn and have the ability to contribute.</p>
+    <br />
+    <h1>skills</h1>
+    <p>Ruby, Ruby on Rails, SQL (PostgreSQL & SQLite), JavaScript, jQuery, AngularJS, React, Underscore.js, Jasmine, RSpec, TDD, Active Record, Git, Heroku, MS Office Suite, Adobe Creative Suite, OSX</p>
+  </div>
     
-      <li>
-        <a class="post-link" href="/ruby,/strings/2014/07/29/ruby-strings/">Ruby Strings, the difference between ' and ''</a>
-                <span class="post-date">Jul 29, 2014</span>
-         <span><p>Today we worked in SQL queries and writing Ruby to translate SQL database rows into Ruby objects. This, in itself, was just extremely exciting and warrants its own blog post, but today I want to write about the difference between using single and double quotes in Ruby.</p>
+  <div class="section">
+    <div class="project">
+      <h1>select projects</h1>
+      <a href="http://browsin-dbc.herokuapp.com"><h2>browsin'</h2></a>
+      <p>browsin' provides users with an efficient way to search streaming movies and shows based on their subscriptions. Simplicity of the software and speed were top priorities for our team on this project. We decided to implement React as a front-end and I jumped at the opportunity. I wrote in React and used Javascript, jQuery and Ajax to round it out. Additionally, I was responsible for the user model/controller and authentication of that user.</p>
+    </div>
 
-</span>
-        <span><a href="/ruby,/strings/2014/07/29/ruby-strings/">read more</a>...</span>
-      </li>
-    
-      <li>
-        <a class="post-link" href="/website/changes/2014/07/27/jekyll-switch/">New site backbone</a>
-                <span class="post-date">Jul 27, 2014</span>
-         <span><p>As you may have noticed, this little website of mine has a little bit of a new layout. The main changes I made were to use a Jekyll backbone to run my posts and website. I’m still hosting on Github (as is evident by the url) but I want everyone to stick with me while I work on making this site awesome!</p>
-
-</span>
-        <span><a href="/website/changes/2014/07/27/jekyll-switch/">read more</a>...</span>
-      </li>
-    
-      <li>
-        <a class="post-link" href="/dbc/phase-1/2014/07/25/two-weeks-down/">Two weeks down, seven to go...</a>
-                <span class="post-date">Jul 25, 2014</span>
-         <span><p><img src="/assets/solong.jpeg" alt="My helpful screenshot" /></p>
-
-</span>
-        <span><a href="/dbc/phase-1/2014/07/25/two-weeks-down/">read more</a>...</span>
-      </li>
-    
-      <li>
-        <a class="post-link" href="/cultural/dbc/2014/07/13/ask-away/">Ask away</a>
-                <span class="post-date">Jul 13, 2014</span>
-         <span><p>The art of asking a ‘good question’ is quickly becoming a very important aspect of my coding thus far. I often find myself searching the Internet for an answer to a puzzling question re our DBC prep work thus far. It would be easy to search the question in its entirety but that would just give you results that tell you the entire answer and not how to get there.</p>
-
-</span>
-        <span><a href="/cultural/dbc/2014/07/13/ask-away/">read more</a>...</span>
-      </li>
-    
-      <li>
-        <a class="post-link" href="/dbc/phase-0/active-record/2014/07/06/active-record/">Active Record</a>
-                <span class="post-date">Jul 6, 2014</span>
-         <span><p>Wo-hoo! Active record! While one would not regularly address something such as Active Record with such excitement and enthusiasm, it is extremely important to the Model-View-Controller (MVC) model which Ruby relies on. Active record handles the transformation of data from a database, such as a SQL table, to a Ruby object.</p>
-
-</span>
-        <span><a href="/dbc/phase-0/active-record/2014/07/06/active-record/">read more</a>...</span>
-      </li>
-    
-      <li>
-        <a class="post-link" href="/ruby,/strings/2014/06/24/hooray-for-optimization/">Hooray for optimization!</a>
-                <span class="post-date">Jun 24, 2014</span>
-         <span><p>SQL databases are an amazing tool and can do a ridiculous amount of things. The problem with amazing tools like this one is that can perform so many functions, which creates a whole slew of computer processing problems. So, as we learn about databases and how to create, manipulate, and store data we will also need to learn how to optimize these tables to return query results in the shortest amount of time possible.</p>
-
-</span>
-        <span><a href="/ruby,/strings/2014/06/24/hooray-for-optimization/">read more</a>...</span>
-      </li>
-    
-  </ul>
-
+    <div class="project">
+      <a href="http://doboco-source.herokuapp.com"><h2>DoBoCo Source</h2></a>
+      <p>DoBoCo Source is a platform for organizing resources, much like Reddit or Hacker News. This project was especially fun because we were creating a resource for past, present and future students at DBC find helpful websites during the 9 weeks. For this project I wrote the Javascript, jQuery and Ajax calls for the front-end in addition to the controller and model for searching the database. </p>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="project">
+      <h1>Experience</h1>
+      <h2>Dev Bootcamp, Chicago, IL <span class="under">Student</span></h2>
+        <ul>
+          <li>Learned fundamentals of web development by coding complex logic problems</li>
+          <li>Practiced positive development habits like TDD and Separation of Concerns</li>
+          <li>In addition to the 70+ hours coding each week, I practiced non-technical skills like code reviews and feedback</li>
+        </ul>
+    </div> 
+    <div class="project">
+      <h2>Credit Union National Association, Madison, WI <span class="under">Digital Media Specialist</span></h2>
+        <ul>
+          <li>Created and maintained web presence for periodicals</li>
+          <li>Developed mobile app using Conduit mobile system, written in HTML</li>
+          <li>Developed mobile app using Mag+ plugin for InDesign using macro</li>
+        </ul>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h1>Education</h1>
+    <h2>University of Wisconsin – Whitewater  
+      <span class="under">Masters of Business Administration, 2013</span>
+    </h2>
+    <br />
+    <h2>University of Wisconsin – Madison 
+      <span class="under">Bachelor of Science, 2011</span>
+    </h2>
+    <br />
+    <h2>Madison Media Institute
+      <span class="under">Associate of Arts, 2011</span>
+    </h2>
+  </div>
 </div>
 
       </div>

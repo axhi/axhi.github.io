@@ -5,9 +5,32 @@
     <description>a work in progress: join me on my journey into programming</description>
     <link>http://axhi.github.io/</link>
     <atom:link href="http://axhi.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 30 Jul 2014 23:11:39 -0500</pubDate>
-    <lastBuildDate>Wed, 30 Jul 2014 23:11:39 -0500</lastBuildDate>
-    <generator>Jekyll v2.1.0</generator>
+    <pubDate>Tue, 23 Sep 2014 14:17:17 -0500</pubDate>
+    <lastBuildDate>Tue, 23 Sep 2014 14:17:17 -0500</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Phase 1 assessments in the bag</title>
+        <description>&lt;p&gt;Woah, what a three week period. DBC has proved every bit exciting as I thought it would be. I have felt happy, angry, sad, excited, challenged, comforted, loved and basically any other emotion over the past 3 weeks. Today we were assessed on our understanding of the Phase 1 fundamentals and if the instructor’s felt we were ready to move onto the next part of the program. &lt;/p&gt;
+
+&lt;p&gt;I think a lot of people are extremely scared of this because they see it as a pass/fail type situation. The truth of the matter is, this place exists to make the individual the best possible entry level development candidate they can be. DBC is clearly a business, but they are truly here to make sure you get your value out of the program. If someone has gone through 3 weeks and isn’t really ready to move on, that person shouldn’t really want to move on…to be honest. You aren’t here to get a ‘grade’ or a diploma, you are here to try and level yourself with the playing field. You are going up against CS grads that can put that exceptional line on their resume.&lt;/p&gt;
+
+&lt;p&gt;Someone from Phase 2 said today, “If I have not learned everything they taught me in this phase, I don’t want to move on to the next one.” It is, in a nutshell, as simple as that. For any incoming boots or prospective boots-please remember this. Not moving on is not easy. You are left behind as all your new-found friends are moving on. There are probably many emotions aside from that running through your mind as well; “That’s another 3 weeks without pay.”, “I have a family, they need me.” and many other thoughts. &lt;/p&gt;
+
+&lt;p&gt;I was fortunate enough to get a firm grasp on all the materials presented to me in Phase 1, but am seeing a few of my cohortmates repeating. I just want them to know that no one thinks they are inadequate and your Bobolink family will always be here for any help/advice. In the end, we all came here for the same intentions and will leave here at the same level.&lt;/p&gt;
+
+&lt;p&gt;“Tweet Tweet”&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Jul 2014 07:05:10 -0500</pubDate>
+        <link>http://axhi.github.io/dbc,/assesment/2014/07/31/phase1-assessments/</link>
+        <guid isPermaLink="true">http://axhi.github.io/dbc,/assesment/2014/07/31/phase1-assessments/</guid>
+        
+        
+        <category>dbc,</category>
+        
+        <category>assesment</category>
+        
+      </item>
     
       <item>
         <title>Ruby Strings, the difference between &#39; and &#39;&#39;</title>
@@ -212,13 +235,13 @@
 
 </description>
         <pubDate>Tue, 24 Jun 2014 07:05:10 -0500</pubDate>
-        <link>http://axhi.github.io/ruby,/strings/2014/06/24/hooray-for-optimization/</link>
-        <guid isPermaLink="true">http://axhi.github.io/ruby,/strings/2014/06/24/hooray-for-optimization/</guid>
+        <link>http://axhi.github.io/ruby,/optimization/2014/06/24/hooray-for-optimization/</link>
+        <guid isPermaLink="true">http://axhi.github.io/ruby,/optimization/2014/06/24/hooray-for-optimization/</guid>
         
         
         <category>ruby,</category>
         
-        <category>strings</category>
+        <category>optimization</category>
         
       </item>
     
