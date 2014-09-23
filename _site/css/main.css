@@ -440,6 +440,10 @@ a:visited { color: #E64C66; }
     border: 1px solid #e8e8e8;
   }
 
+  .projects {
+    width:100%;
+  }
+
   .site-nav .menu-icon {
     display: block;
     font-size: 26px;
