@@ -9,7 +9,7 @@ permalink: /work/
   <a href="http://browsin-dbc.herokuapp.com" target="_blank">
     <img class="project-img" src="/assets/browsin.jpg" />
   </a>
-
+  <a href="https://github.com/bobolinks-2014/browsin" target="_blank">GitHub Repository</a> | <a href="http://browsin-dbc.herokuapp.com" target="_blank">Live Location</a>
   <p class="object-desc">browsin' provides users with an efficient way to search streaming movies and shows based on their subscriptions.</p>
   <h4>technology</h4>
   <p>Heroku - deployment, Rails - backend, React - frontend</p>
@@ -23,6 +23,7 @@ permalink: /work/
   <a href="http://doboco-source.herokuapp.com" target="_blank">
     <img class="project-img" src="/assets/dobo-source.jpg" />
   </a>
+  <a href="https://github.com/bobolinks-2014/dobo-source" target="_blank">GitHub Repository</a> | <a href="http://doboco-source.herokuapp.com" target="_blank">Live Location</a>
     <p class="object-desc">DoBoCo Source is a platform for organizing resources, much like Reddit or Hacker News.</p>
     <h4>technology</h4>
   <p>Heroku - deployment, Rails - backend, Javascript - frontend render</p>
@@ -36,6 +37,7 @@ permalink: /work/
   <a href="http://bobo-news.herokuapp.com" target="_blank">
     <img class="project-img" src="/assets/bobo-news.jpg" />
   </a>
+  <a href="https://github.com/axhi/bobo-news" target="_blank">GitHub Repository</a> | <a href="http://bobo-news.herokuapp.com" target="_blank">Live Location</a>
     <p class="object-desc">BoboNews is a HackerNews clone made as a project at Dev Bootcamp. The project's intent was to organize links for our Bobolink cohort.</p>
     <h4>technology</h4>
   <p>Heroku - demployment, Rails - backend, Rails - frontend page serving</p>
