@@ -22,9 +22,9 @@ img {
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
-a         { color: #E64C66; text-decoration: none; }
+a         { color: cornflowerblue; text-decoration: none; }
 a:hover   { color: #2D3E50; text-decoration: underline; }
-a:visited { color: #E64C66; }
+a:visited { color: cornflowerblue; }
 
 /* Utility */
 
@@ -46,8 +46,7 @@ a:visited { color: #E64C66; }
 
 .site-header {
   min-height: 56px;
-  background-color: #1BBC9B;
-  font-family: 'Rokkitt', serif;
+  background-color: coral;
   font-size: 1.5em;
   color: white;
 }
@@ -177,7 +176,6 @@ a:visited { color: #E64C66; }
   margin-bottom: 25px; 
   border-bottom: 1px solid #AEAEAE;
   padding-right: 10px;
-  font-family: 'Rokkitt', serif;
   text-transform: lowercase;
   font-size: 1.5em;
 }
