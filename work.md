@@ -40,7 +40,7 @@ permalink: /work/
   <a href="https://github.com/axhi/bobo-news" target="_blank">GitHub Repository</a> | <a href="http://bobo-news.herokuapp.com" target="_blank">Live Location</a>
     <p class="object-desc">BoboNews is a HackerNews clone made as a project at Dev Bootcamp. The project's intent was to organize links for our Bobolink cohort.</p>
     <h4>technology</h4>
-  <p>Heroku - demployment, Rails - backend, Rails - frontend page serving</p>
+  <p>Heroku - deployment, Rails - backend, Rails - frontend page serving</p>
   <h4>contribution</h4>
   <p>I worked on the entire scope of this project as a pair in a pair-programming experience. My pair and I were involved in the entire decision making process as to most effectively clone HackerNews.</p> 
   </span>
