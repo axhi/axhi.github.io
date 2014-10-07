@@ -45,3 +45,17 @@ permalink: /work/
   <p>I worked on the entire scope of this project as a pair in a pair-programming experience. My pair and I were involved in the entire decision making process as to most effectively clone HackerNews.</p> 
   </span>
 </div>
+
+<div class="projects">
+  <h3>Tic-Tac-Lose</h3>
+  <a href="/tic-tac-toe" target="_blank">
+    <img class="project-img" src="/assets/tic-tac.jpg" />
+  </a>
+  <a href="https://github.com/axhi/tictatoe" target="_blank">GitHub Repository</a> | <a href="/tic-tac-toe" target="_blank">Live Location</a>
+    <p class="object-desc">Develop a tic-tac-toe game where the computer can never lose!</p>
+    <h4>technology</h4>
+  <p>Javascript - logic/frontend</p>
+  <h4>contribution</h4>
+  <p>I wrote this entire program as a response to a coding challenge. I liked the game enough that I put it online. If you find a way to beat my computer, please let me know!</p>
+  </span>
+</div>
