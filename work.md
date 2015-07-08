@@ -51,7 +51,7 @@ permalink: /work/
   <a href="/tic-tac-toe" target="_blank">
     <img class="project-img" src="/assets/tic-tac.jpg" />
   </a>
-  <a href="https://github.com/axhi/tictatoe" target="_blank">GitHub Repository</a> | <a href="/tic-tac-toe" target="_blank">Live Location</a>
+  <a href="https://github.com/axhi/tictactoe" target="_blank">GitHub Repository</a> | <a href="/tic-tac-toe" target="_blank">Live Location</a>
     <p class="object-desc">Develop a tic-tac-toe game where the computer can never lose!</p>
     <h4>technology</h4>
   <p>Javascript - logic/frontend</p>
