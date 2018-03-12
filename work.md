@@ -15,7 +15,6 @@ permalink: /work/
   <p>Heroku - deployment, Rails - backend, React - frontend</p>
   <h4>contribution</h4>
   <p>I wrote in React and used Javascript, jQuery and Ajax to round it out. Additionally, I was responsible for the user model/controller and authentication of that user.</p>
-  </span>
 </div>
 
 <div class="projects">
@@ -29,7 +28,6 @@ permalink: /work/
   <p>Heroku - deployment, Rails - backend, Javascript - frontend render</p>
   <h4>contribution</h4>
   <p>I wrote the Javascript, jQuery and Ajax calls for the front-end in addition to the controller and model for searching the database.</p>
-  </span>
 </div>
 
 <div class="projects">
@@ -43,7 +41,6 @@ permalink: /work/
   <p>Heroku - deployment, Rails - backend, Rails - frontend page serving</p>
   <h4>contribution</h4>
   <p>I worked on the entire scope of this project as a pair in a pair-programming experience. My pair and I were involved in the entire decision making process as to most effectively clone HackerNews.</p> 
-  </span>
 </div>
 
 <div class="projects">
@@ -57,5 +54,4 @@ permalink: /work/
   <p>Javascript - logic/frontend</p>
   <h4>contribution</h4>
   <p>I wrote this entire program as a response to a coding challenge. I liked the game enough that I put it online. If you find a way to beat my computer, please let me know!</p>
-  </span>
 </div>
