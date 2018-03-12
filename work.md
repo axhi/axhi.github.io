@@ -9,7 +9,7 @@ permalink: /work/
   <a href="https://browsin-tetrabranchiate-cotehardie.cfapps.io/" target="_blank">
     <img class="project-img" src="/assets/browsin.jpg" />
   </a>
-  <a href="https://github.com/bobolinks-2014/browsin" target="_blank">GitHub Repository</a> | <a href="http://browsin-dbc.herokuapp.com" target="_blank">Live Location</a>
+  <a href="https://github.com/bobolinks-2014/browsin" target="_blank">GitHub Repository</a> | <a href="https://browsin-tetrabranchiate-cotehardie.cfapps.io" target="_blank">Live Location</a>
   <p class="object-desc">browsin' provides users with an efficient way to search streaming movies and shows based on their subscriptions.</p>
   <h4>technology</h4>
   <p>Heroku - deployment, Rails - backend, React - frontend</p>
